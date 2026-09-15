@@ -6,8 +6,7 @@ Multi-page web application featuring full-service event planning, marketing, pro
 * **Vercel**: https://mmeink-website.vercel.app/
 
 ##  Key Features
-* **Alternating Zigzag Layout**: Uses `.row-container` with flexbox directional swapping (`flex-direction: row-reverse`) for high-impact visual storytelling between text and media columns.
-* **Responsive Breakpoint Behavior**: Gracefully collapses multi-column media/text rows into a single vertical stack on mobile viewports (`max-width: 768px`).
+* **Alternating Zigzag Layout**: Features `.row-container` with flexbox directional swapping (`flex-direction: row-reverse`) for visual storytelling between text and media columns.
 * **Multi-Column Corporate Footer**: CSS Grid layout (`repeat(auto-fit, minmax(180px, 1fr))`) structuring navigation directories, service offerings, and headquarters contact credentials.
 * **Modern CTA Architecture**: Full-width high-contrast feature banners and responsive action buttons.
 
