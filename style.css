@@ -345,15 +345,51 @@ nav a {
 
 }
 
-.about{
-button{
-  font-size:16px;
-  font-weight:400;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color:lightblue;
-}
+
+.about a.button {
+  font-size: 18px;
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 14px 24px;
+  display: inline-block;
+  margin-top: 16px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
 }
 
+.about a.button:hover {
+  background-color: #2563eb;
+  color: #fff;
+  text-decoration: none;
+}
+
+a.button,
+button {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 16px;
+  outline: none;
+  box-shadow: none;
+  transition: background-color 0.2s ease;
+}
+
+a.button:hover,
+button:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+}
 
 .row-container {
   display: flex;
@@ -362,11 +398,6 @@ button{
   max-width: 1200px;
   margin: 60px auto;
   padding: 0 20px;
-  button{
-  font-size:16px;
-  font-weight:400;
-  background-color:lightblue;
-}
 }
 
 .row-container.reverse .text-column {
@@ -398,35 +429,30 @@ button{
     flex-direction: column;
   }
 }
-.properties button {
-  font-size: 20px;
-  background-color: #3b82f6; 
-  color: #fff;
-  padding: 16px 24px;
+.properties {
   width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 20px auto;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+  background-color: #2b8ed0; /* matches high-contrast brand accent */
+  text-align: center;
+  padding: 28px 16px;
+  box-sizing: border-box;
 }
 
-.properties button:hover {
-  background-color: #2563eb;
-}
-
-.properties button a,
+.properties a.btn,
 .properties button {
   color: #fff;
   text-decoration: none;
+  font-size: 40px;
+  font-weight: 600;
+  display: inline-block;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.properties button a:hover,
+.properties a.btn:hover,
 .properties button:hover {
-  color: #fff; 
-  text-decoration: none;
+  text-decoration: underline; /* or keep clean */
+  color: #fff;
 }
 .footer-container {
   display: grid;
@@ -461,5 +487,14 @@ button{
   color: #aaa;
   line-height: 1.5;
 }
+.footer-column ul li a {
+  color: #aaa;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+}
 
+.footer-column ul li a:hover {
+  color: #fff;
+  text-decoration: underline !important;
+}
 
