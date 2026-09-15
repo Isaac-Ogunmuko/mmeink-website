@@ -346,8 +346,14 @@ nav a {
 }
 
 .about{
-
+button{
+  font-size:16px;
+  font-weight:400;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color:lightblue;
 }
+}
+
 
 .row-container {
   display: flex;
@@ -356,11 +362,21 @@ nav a {
   max-width: 1200px;
   margin: 60px auto;
   padding: 0 20px;
+  button{
+  font-size:16px;
+  font-weight:400;
+  background-color:lightblue;
+}
 }
 
 .row-container.reverse .text-column {
   padding: 40px;
   border-radius: 8px;
+  button{
+  font-size:16px;
+  font-weight:400;
+  background-color:lightblue;
+}
 }
 
 .text-column,
@@ -375,16 +391,43 @@ nav a {
   border-radius: 8px;
 }
 
-/* Mobile Stack Fallback */
+
 @media (max-width: 768px) {
   .row-container,
   .row-container.reverse {
     flex-direction: column;
   }
 }
+.properties button {
+  font-size: 20px;
+  background-color: #3b82f6; 
+  color: #fff;
+  padding: 16px 24px;
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
 
+.properties button:hover {
+  background-color: #2563eb;
+}
 
+.properties button a,
+.properties button {
+  color: #fff;
+  text-decoration: none;
+}
 
+.properties button a:hover,
+.properties button:hover {
+  color: #fff; 
+  text-decoration: none;
+}
 .footer-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
